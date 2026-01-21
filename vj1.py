@@ -81,18 +81,6 @@ plt.legend(fontsize=25)
 plt.grid(True)
 plt.show()
 
-plt.scatter(lista_n1_2, lista_m1_2, label='Podaci (log-log)', color='green')
-plt.plot(x1_2_fit, y1_2_fit, label=f'Fit: y = {a1_2:.2f}x + {b1_2:.2f}', color='orange')
-plt.fill_between(x1_2_fit, y1_2_fit - y1_2_fit_error, y1_2_fit + y1_2_fit_error, 
-                 color='orange', alpha=0.2, label=r'Interval pouzdanosti ($\pm$ 1$\sigma$)')
-plt.xticks(fontsize=25)
-plt.yticks(fontsize=25)
-plt.xlabel('log(n)', fontsize=25)
-plt.ylabel('log(m)', fontsize=25)
-plt.title('Linearna regresija s intervalom pouzdanosti', fontsize=30)
-plt.legend(fontsize=25)
-plt.grid(True)
-plt.show()
 
 plt.scatter(lista_n1, lista_m1, label='Podaci (log-log)', color='red')
 plt.plot(x1_fit, y1_fit, label=f'Fit: y = {a1:.2f}x + {b1:.2f}', color='orange')
