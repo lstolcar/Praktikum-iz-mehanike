@@ -90,10 +90,12 @@ def specificni_toplinski_kapacitet2_regresija():
             print("-" * 30)
 
 
-    plt.xlabel('Vrijeme t [s]')
-    plt.ylabel('Temperatura T [°C]')
-    plt.title('Linearna regresija po setovima mjerenja')
-    plt.legend()
+    plt.xlabel('Vrijeme t [s]', fontsize=25)
+    plt.ylabel('Temperatura T [°C]', fontsize=25)
+    plt.title('Linearna regresija po setovima mjerenja', fontsize=25)
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+    plt.legend(fontsize=20)
     plt.grid(True)
     plt.show()
 
